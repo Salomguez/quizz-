@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Quotidien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="phone-frame">
+        <div id="quiz-container">
+            <div id="header">
+                <img src="img/Logo.png" alt="Logo" id="logo">
+            </div>
+            <h1>Quiz Quotidien</h1>
+            <form id="quiz-form">
+                <div class="question">
+                    <label for="meteo">Météo du jour :</label>
+                    <select id="meteo" name="meteo" >
+                        <option value="Ensoleillé">Ensoleillé</option>
+                        <option value="Nuageux">Nuageux</option>
+                        <option value="Pluvieux">Pluvieux</option>
+                        <option value="Neigeux">Neigeux</option>
+                        <option value="Orageux">Orageux</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="etat-avant">Comment étais-tu avant l’exercice ?</label>
+                    <select id="etat-avant" name="etat-avant" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <textarea id="commentaire-etat-avant" name="commentaire-etat-avant" placeholder="Commentaire" ></textarea>
+                </div>
+                <div class="question">
+                    <label for="etat-apres">Comment es-tu maintenant ?</label>
+                    <select id="etat-apres" name="etat-apres" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <textarea id="commentaire-etat-apres" name="commentaire-etat-apres" placeholder="Commentaire"></textarea>
+                </div>
+                <div class="question">
+                    <label for="impact-vie">Impact sur la vie perso/pro :</label>
+                    <select id="impact-vie" name="impact-vie" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <textarea id="commentaire-impact-vie" name="commentaire-impact-vie" placeholder="Commentaire" ></textarea>
+                </div>
+                <div class="question">
+                    <label for="relation-soignant">Impact sur la relation patient/soignant :</label>
+                    <select id="relation-soignant" name="relation-soignant" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <textarea id="commentaire-relation-soignant" name="commentaire-relation-soignant" placeholder="Commentaire" ></textarea>
+                </div>
+                <div class="question">
+                    <label for="confiance">Impact sur le niveau de confiance :</label>
+                    <select id="confiance" name="confiance" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <textarea id="commentaire-confiance" name="commentaire-confiance" placeholder="Commentaire" ></textarea>
+                </div>
+                <button type="submit">Soumettre</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
