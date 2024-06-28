@@ -21,6 +21,6 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
 
     alert('Merci pour vos réponses!');
 
-    // Reset the form
+  
     document.getElementById('quiz-form').reset();
 });

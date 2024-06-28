@@ -16,7 +16,7 @@
             <form id="quiz-form">
                 <div class="question">
                     <label for="meteo">Météo du jour :</label>
-                    <select id="meteo" name="meteo" >
+                    <select id="meteo" name="meteo" required>
                         <option value="Ensoleillé">Ensoleillé</option>
                         <option value="Nuageux">Nuageux</option>
                         <option value="Pluvieux">Pluvieux</option>
@@ -26,14 +26,14 @@
                 </div>
                 <div class="question">
                     <label for="etat-avant">Comment étais-tu avant l’exercice ?</label>
-                    <select id="etat-avant" name="etat-avant" >
+                    <select id="etat-avant" name="etat-avant" required>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <textarea id="commentaire-etat-avant" name="commentaire-etat-avant" placeholder="Commentaire" ></textarea>
+                    <textarea id="commentaire-etat-avant" name="commentaire-etat-avant" placeholder="Commentaire"></textarea>
                 </div>
                 <div class="question">
                     <label for="etat-apres">Comment es-tu maintenant ?</label>
@@ -55,7 +55,7 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <textarea id="commentaire-impact-vie" name="commentaire-impact-vie" placeholder="Commentaire" ></textarea>
+                    <textarea id="commentaire-impact-vie" name="commentaire-impact-vie" placeholder="Commentaire"></textarea>
                 </div>
                 <div class="question">
                     <label for="relation-soignant">Impact sur la relation patient/soignant :</label>
@@ -66,7 +66,7 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <textarea id="commentaire-relation-soignant" name="commentaire-relation-soignant" placeholder="Commentaire" ></textarea>
+                    <textarea id="commentaire-relation-soignant" name="commentaire-relation-soignant" placeholder="Commentaire"></textarea>
                 </div>
                 <div class="question">
                     <label for="confiance">Impact sur le niveau de confiance :</label>
@@ -77,7 +77,7 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <textarea id="commentaire-confiance" name="commentaire-confiance" placeholder="Commentaire" ></textarea>
+                    <textarea id="commentaire-confiance" name="commentaire-confiance" placeholder="Commentaire"></textarea>
                 </div>
                 <button type="submit">Soumettre</button>
             </form>
